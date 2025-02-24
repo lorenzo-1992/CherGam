@@ -1,0 +1,653 @@
+/* Reset di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #c2a9654a;
+  font-size: 1.5rem;
+}
+a {
+  color: #c2a965;
+  text-decoration: none;
+  /* background-color: #c2a965; */
+  border-radius: 15px;
+  padding: 5px;
+}
+
+/* Header */
+header {
+  background: #131313;
+  color: #c2a965;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Nascondi l'icona hamburger su desktop */
+.menu-toggle {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #c2a965;
+}
+.menu-toggle:hover {
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.15);
+}
+/*HERO*/
+#hero {
+  position: relative;
+  height: 400px;
+  background: url("images/logoM.png") center/80% auto no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  transition: background 1.5s ease-in-out; /* Transizione più fluida */
+}
+
+/* SEZIONE NUMERI */
+#numeri {
+  display: flex;
+  justify-content: space-around;
+  background: #131313;
+  color: #c2a965;
+  padding: 40px;
+  text-align: center;
+}
+
+.stat {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat h2 {
+  font-size: 40px;
+}
+
+/* SEZIONE RECENSIONI */
+#recensioni {
+  background: #353431;
+  color: #c2a965;
+  text-align: center;
+  padding: 40px;
+  margin-top: 25px;
+}
+
+.review {
+  background: white;
+  color: #131313;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Nasconde le recensioni inizialmente */
+}
+
+.review.active {
+  display: block; /* Mostra solo una recensione alla volta */
+}
+
+.logo {
+  width: 400px;
+}
+#home {
+  color: black;
+}
+#chisiamo {
+  color: black;
+  margin: 50px;
+}
+#servizi {
+  color: black;
+  margin: 50px;
+}
+/* Stile per la sezione progetti */
+#progetti {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #131313d7;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Titoli */
+#progetti h2 {
+  font-size: 28px;
+  color: #c2a965;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #c2a965;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin:0 auto;
+}
+.btn:hover {
+  background: #131313d7;
+  color: #c2a965;
+}
+
+/* Sezione Contatti */
+#contatti {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #353431;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* CONTAINER PER DATI + MAPPA */
+.contatti-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* INFO AZIENDA */
+.contatti-info {
+  width: 55%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+  color: #131313;
+}
+#contatti h2 {
+  color: #c2a965;
+}
+/* STILE TESTO INFO */
+.contatti-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #131313;
+}
+
+.contatti-info strong {
+  color: #000;
+}
+
+.contatti-info a {
+  text-decoration: none;
+  background-color: #131313e5;
+}
+
+/* MAPPA */
+.contatti-mappa {
+  width: 40%;
+}
+
+.contatti-mappa iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* LINK SOCIETÀ */
+.scopri-societa {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.scopri-societa .btn {
+  display: block;
+  background: #c2a965;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  align-self: center;
+
+}
+
+.scopri-societa .btn:hover {
+  background: #c2a96585;
+}
+
+/* FOOTER */
+footer {
+  background-color: #131313;
+  color: #c2a965;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+footer img {
+  width: 150px;
+}
+
+/* Stile icona social */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ffffff;
+  background-color: #c2a965;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #c2a965;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #c2a965;
+  background-color: #131313;
+  border-bottom: 3px solid #c2a965;
+}
+
+/* Hero */
+/* Sezione con layout affiancato */
+.split-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 20px;
+}
+
+/* Box contenente le informazioni */
+.split-box {
+  width: 48%;
+  background: none;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Testo più leggibile */
+.split-box h2 {
+  font-size: 24px;
+  color: #131313;
+}
+
+.split-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Servizi */
+.servizi-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.servizio {
+  width: 30%;
+  background: #c2a965;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* CAROSELLO */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Contenitore delle immagini */
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Assicura che le immagini mantengano le proporzioni */
+.carousel img {
+  width: 100%;
+  height: 500px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  object-fit: cover; /* Impedisce lo stretching delle immagini */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* PULSANTI DEL CAROSELLO */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+/* CHAT BUTTON */
+#chat-button {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #c2a965;
+  color: #131313ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  font-size: 24px;
+}
+
+/* Effetto hover */
+#chat-button:hover {
+  background-color: #131313ab;
+  color: #c2a965;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 940px) {
+  /* Struttura dell'header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Mostra il menu hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Nascondi il menu inizialmente */
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  /* Quando il menu è attivo */
+  nav.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #131313;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+  }
+  .contatti-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contatti-info,
+  .contatti-mappa {
+    width: 100%;
+  }
+  .servizi-container {
+    flex-direction: column;
+  }
+
+  .servizio {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .split-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .split-box {
+    width: 90%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Il logo rimane sopra */
+  .logo {
+    width: 400px; /* Riduci la dimensione per un miglior adattamento */
+  }
+
+  /* La lista di navigazione va sotto il logo */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  footer p{
+    font-size: 1rem;
+  }
+
+  /* Animazione del menu */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+@media screen and (max-width: 568px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .logo {
+    width: 150px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .servizio {
+    width: 100%;
+    padding: 15px;
+  }
+  .contatti-info a {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 406px) {
+  /* HEADER */
+  .logo {
+    width: 120px; /* Ridotto per adattarsi meglio */
+  }
+
+  .menu-toggle {
+    font-size: 24px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  /* SEZIONE HERO */
+  #hero {
+    height: 300px; /* Ridotta l'altezza per adattarsi */
+    background-size: contain; /* Evita eccessivo zoom */
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  /* SEZIONE NUMERI */
+  #numeri {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .stat h2 {
+    font-size: 30px;
+  }
+
+  .stat p {
+    font-size: 14px;
+  }
+
+  /* SEZIONE RECENSIONI */
+  #recensioni {
+    padding: 20px;
+  }
+
+  .review {
+    width: 95%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* SEZIONE SERVIZI */
+  .servizi-container {
+    flex-direction: column;
+  }
+
+  .servizio {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* SEZIONE PROGETTI */
+  #progetti {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* CAROSELLO */
+  .carousel img {
+    height: 250px; /* Evita lo stretching su schermi piccoli */
+  }
+
+  /* SEZIONE CONTATTI */
+  .contatti-container {
+    flex-direction: column;
+  }
+
+  .contatti-info,
+  .contatti-mappa {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  footer .logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+}
