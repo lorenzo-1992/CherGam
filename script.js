@@ -89,3 +89,21 @@ function changeBackground() {
 if (reviews.length > 0) setInterval(showNextReview, 2500);
 if (heroSection) setInterval(changeBackground, 2500);
 
+// MENU TOGGLE MOBILE
+
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+}
+
+// DROPDOWN SU MOBILE
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach((dropdown) => {
+  dropdown.addEventListener("click", (event) => {
+    event.stopPropagation();
+    dropdown.classList.toggle("active");
+  });
+});
